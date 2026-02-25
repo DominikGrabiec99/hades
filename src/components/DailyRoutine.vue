@@ -10,7 +10,7 @@ const dailyRoutine = [
       'Komenda po której reaguje żeby się zbierać do wyjścia: <span class="font-semibold">"Spacer"</span>.',
       'Jeżeli ciągnie na spacerze zatrzymać się i poczekać aż siądzie i popatrzy na was.',
       'Kontakt z innymi psami starać się żeby nie był zbyt blisko a obserwował z daleka, absorbować jego uwagę aby olał inne psy (np smaczki).',
-      'Warto wziąć lepsze smaczki wtedy chętniej przybieka na spacerze i mniej ciągnie, chodzi przy nodze',
+      'Warto wziąć lepsze smaczki wtedy chętniej przybieka na spacerze i mniej ciągnie, chodzi przy nodze.',
       'Uczymy psa jak najdłuższego wytrzymywania siku. Dlatego staramy się go wypuszczać na dwór co 3h.',
       'Po każdym posiłku po 15 min wychodzimy z nim na dwór.',
       'Najlepiej żeby raz w ciągu dnia miał dłuższy spacer 30-60 min + jakąś interakcje jak rzucanie patyka/piłki.',
@@ -27,8 +27,8 @@ const dailyRoutine = [
       'Komenda po której może zacząć jeść: <span class="font-semibold">"Jedzenie"</span>.',
       'Jednorazowa porcja karmy: <span class="font-semibold">150 g</span>',
       'Dodatakowo podczas nauki można dawać mu suchą karmę (gorzej reaguje) lub pokrojone kawałki mokrej karmy jako nagrodę.',
-      'Raz dziennie pół tabletki na stawy, do karmy pokruszyć',
-      'Jak nie chce spać albo jest zestresowany dać Konga - wypełnić go suchą karmą zalać wodą na kilka min, zamrozić i dać do lizania',
+      'Raz dziennie pół tabletki na stawy.',
+      'Jak nie chce spać albo jest zestresowany dać Konga - wypełnić go suchą karmą zalać wodą na kilka min, zamrozić i dać do lizania.',
     ],
   },
   {
@@ -40,8 +40,8 @@ const dailyRoutine = [
       'Jeżeli bardzo przeszkadza dać żwacza do klatki - zajmie go to na kilka minut.',
       'Nauka komend 2/3/4 razy dziennie po 15 minut.',
       'Woda zawsze dostępna.',
-      'Niereagowanie jak szczeka lub skacze',
-      'Jasno określone zasady żeby każdy się ich trzymał - będzie się buntować',
+      'Niereagowanie jak szczeka lub skacze.',
+      'Jasno określone zasady żeby każdy się ich trzymał - będzie się buntować.',
       'Niech wszystkie zabawki nie leżą na wierzchu (dawać 2), zmieniać je raz na jakiś czas żeby były dla niego bardziej atrakcyjne.',
       'Mycie zębów raz na 4 dni, szczoteczka na palec - najpierw niech poliże pastę a potem stopniowo wprowadzać szczoteczkę.',
     ],
@@ -50,7 +50,7 @@ const dailyRoutine = [
 </script>
 
 <template>
-  <div class="container px-4 py-10 mx-auto flex flex-col items-center justify-center">
+  <div class="container max-w-7xl px-4 py-10 mx-auto flex flex-col items-center justify-center">
     <h2 class="text-2xl font-bold">Codzienna rutyna</h2>
 
     <div class="w-full mt-6 flex flex-col lg:flex-row gap-4 lg:justify-center xl:gap-10">

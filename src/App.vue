@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DailyRoutine from './components/DailyRoutine.vue'
+import DogTricks from './components/DogTricks.vue'
 </script>
 
 <template>
@@ -15,5 +16,7 @@ import DailyRoutine from './components/DailyRoutine.vue'
     </div>
 
     <DailyRoutine />
+
+    <DogTricks />
   </div>
 </template>
