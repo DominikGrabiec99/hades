@@ -1,6 +1,20 @@
 <script setup lang="ts">
 import AccordionTrick from './AccordionTrick.vue'
 
+import doMnieVideo from '@/assets/videos/do-mnie.mp4'
+import siadVideo from '@/assets/videos/siad.mp4'
+import lezecVideo from '@/assets/videos/lezec.mp4'
+import lapaVideo from '@/assets/videos/lapa.mp4'
+import prosVideo from '@/assets/videos/pros.mp4'
+import czekajVideo from '@/assets/videos/czekaj.mp4'
+import nogaVideo from '@/assets/videos/noga.mp4'
+import srodekVideo from '@/assets/videos/srodek.mp4'
+import slalomVideo from '@/assets/videos/slalom.mp4'
+import nieVideo from '@/assets/videos/nie.mp4'
+import obrotVideo from '@/assets/videos/obrot.mp4'
+import uklonVideo from '@/assets/videos/uklon.mp4'
+import proszeVideo from '@/assets/videos/prosze.mp4'
+
 const tricks = [
   {
     name: 'Skupienie uwagi',
@@ -8,7 +22,7 @@ const tricks = [
     description:
       'Wyciągamy smaczek w bok, pies powinien wtedy spojrzeć na nas, następnie nagradzamy go smaczkiem.',
     ytLink: 'https://www.youtube.com/watch?v=K1EWibyPqqU&t=1s',
-    film: '',
+    video: '',
   },
   {
     name: 'Do mnie',
@@ -16,22 +30,22 @@ const tricks = [
     description:
       'Wołamy "Do mnie", jeżeli przybiega, dajemy mu smaczek i chwalimy go. Warto robić w różnych odległościach i wołać go, gdy nie jest na nas skupiony.',
     ytLink: 'https://www.youtube.com/watch?v=lDCmeGN9sgg&t=1s',
-    film: '',
+    video: doMnieVideo,
   },
   {
     name: 'Siad',
     command: 'Siad',
     description:
-      'Pies powinien wykonać komendę na samo słowo "siad", jeżeli tego nie robi, dodać gest palca w dół jak na filmie.',
+      'Pies powinien wykonać komendę na samo słowo "siad", jeżeli tego nie robi, dodać gest palca w dół jak na videoie.',
     ytLink: 'https://www.youtube.com/watch?v=OnLbb8RimWg',
-    film: '',
+    video: siadVideo,
   },
   {
     name: 'Leżeć',
     command: 'Leżeć',
     description: 'Pies umie kłaść się na komendę, jeżeli tego nie robi, dodać poziomą dłoń.',
     ytLink: 'https://www.youtube.com/watch?v=kKxDjZ7rl0ns',
-    film: '',
+    video: lezecVideo,
   },
   {
     name: 'Łapa',
@@ -39,7 +53,7 @@ const tricks = [
     description:
       'Podstawiamy rękę pod jego łapę, gdy stoi/siedzi i wydajemy komendę "łapa", gdy poda, nagradzamy smaczkiem. Na zmianę z sekwencją "łapa + druga łapa" i dopiero wtedy dajemy smaczek.',
     ytLink: 'https://www.youtube.com/watch?v=v1VNhQSjqUY',
-    film: '',
+    video: lapaVideo,
   },
   {
     name: 'Proszenie o smakołyk',
@@ -47,7 +61,7 @@ const tricks = [
     description:
       'Pies podskakuje na tę komendę i prosi, połowicznie umie na samą komendę, warto trenować z gestem, stopniowo go wycofując.',
     ytLink: 'https://www.youtube.com/watch?v=sIxGgXbz_kA&t=149s',
-    film: '',
+    video: prosVideo,
   },
   {
     name: 'Czekaj',
@@ -55,7 +69,7 @@ const tricks = [
     description:
       'Pies siada i czeka na komendę "do mnie". Wydłużać czas czekania z każdym powtórzeniem. Warto powiedzieć komendę, odejść, wrócić do psa po jakimś czasie, nagrodzić go, wydać znowu komendę, odejść na jakiś czas i go zawołać, gdy przybiegnie, nagrodzić.',
     ytLink: 'https://www.youtube.com/watch?v=31CprFHWo78&t=139s',
-    film: '',
+    video: czekajVideo,
   },
   {
     name: 'Na miejsce',
@@ -63,7 +77,7 @@ const tricks = [
     description:
       'Należy palcem wskazać miejsce, na które ma iść pies, powinien się położyć i czekać na komendę "do mnie". Na początku nagradzać za samo pójście na swoje miejsce. Odejść na jakiś czas (na razie wytrzymuje do 1 min), wrócić i nagrodzić psa, potem znowu odejść i go zawołać wraz z nagrodą za przyjście.',
     ytLink: 'https://www.youtube.com/watch?v=StgN2DQuhao',
-    film: '',
+    video: '',
   },
   {
     name: 'Noga',
@@ -71,7 +85,7 @@ const tricks = [
     description:
       'Pies po wydaniu tej komendy powinien chodzić przy prawej nodze, ważne, żeby nakierować go smaczkiem na dobrą nogę, jeżeli idzie po złej. Nagradzać co jakiś czas (np. 15 s czy 30 s) za chodzenie przy nodze. Tak samo na spacerze, gdy sam z siebie chodzi blisko, również nagrodzić.',
     ytLink: 'https://www.youtube.com/watch?v=Gd_rx9K8aW4&t=149s',
-    film: '',
+    video: nogaVideo,
   },
   {
     name: 'Środek',
@@ -79,7 +93,7 @@ const tricks = [
     description:
       'Pies po tej komendzie i geście od tyłu wchodzi pomiędzy nogami i siada, patrząc na nas. Próbować również bez gestu.',
     ytLink: 'https://www.youtube.com/watch?v=XqpOum5r7OY&t=81s',
-    film: '',
+    video: srodekVideo,
   },
   {
     name: 'Slalom',
@@ -87,7 +101,7 @@ const tricks = [
     description:
       'Pies przechodzi pomiędzy nogami, pamiętać, żeby zacząć od dobrej nogi, od przeciwnej niż po której stoi pies. Nagradzać go po przejściu sekwencji 4 przejść.',
     ytLink: 'https://www.youtube.com/watch?v=S2Jox8tKOL4',
-    film: '',
+    video: slalomVideo,
   },
   {
     name: 'Zostaw',
@@ -95,7 +109,7 @@ const tricks = [
     description:
       'Podczas zabawy z psem szarpakiem przestać szarpać i wydać komendę "zostaw", pies powinien się uspokoić i oddać zabawkę, po oddaniu zabawki bawić się z nim dalej tą samą zabawką. Powtarzać kilka razy przy zabawie.',
     ytLink: 'https://www.youtube.com/watch?v=9g9thndLB7A',
-    film: '',
+    video: '',
   },
   {
     name: 'Jedzenie',
@@ -103,15 +117,15 @@ const tricks = [
     description:
       'Komenda informująca psa, że zaraz dostanie jedzenie. Komendę powiedzieć przed nasypaniem do miski jedzenia. Pies po położeniu miski powinien czekać na komendę, jeżeli tego nie zrobi, zakryć jedzenie nogą i czekać, aż na nas spojrzy. Sprawdzać psa co jakiś czas, mówiąc różne słowa bardziej lub mniej zbliżone do słowa komendy.',
     ytLink: '',
-    film: '',
+    video: '',
   },
   {
     name: 'Nie',
     command: 'Nie',
     description:
-      'Komenda informująca psa, że nie wolno mu robić czegoś. Duże pole do poprawy w tej komendzie, warto ją trenować w różnych sytuacjach i miejscach. Trenować jak na filmach.',
+      'Komenda informująca psa, że nie wolno mu robić czegoś. Duże pole do poprawy w tej komendzie, warto ją trenować w różnych sytuacjach i miejscach. Trenować jak na videoach.',
     ytLink: 'https://www.youtube.com/watch?v=SZ-CRwWSyJA',
-    film: '',
+    video: nieVideo,
   },
   {
     name: 'Ukłon',
@@ -119,14 +133,14 @@ const tricks = [
     description:
       'Pies kłania się przednimi łapkami na tę komendę wraz z gestem. Stopniowo zmniejszać gest tak, aby na koniec wykonywał ją jedynie poprzez komendę.',
     ytLink: 'https://www.youtube.com/watch?v=OfzE-dJ4jAs',
-    film: '',
+    video: uklonVideo,
   },
   {
     name: 'Obrót',
     command: 'Obrót',
     description: 'Pies wykonuje tę komendę poprzez ruch ręką wokół niego.',
     ytLink: 'https://www.youtube.com/shorts/-j40M-wcdDI',
-    film: '',
+    video: obrotVideo,
   },
   {
     name: 'Pozwolenie',
@@ -134,7 +148,7 @@ const tricks = [
     description:
       'Kładziemy na ręce smaczek i czekamy, aż pies będzie na nas patrzył i nie będzie zainteresowany smaczkiem. Wydajemy komendę pozwolenia i dajemy mu smaczek. Tak samo ćwiczymy na zabawkach. Jeżeli próbuje zabrać smaczek lub chwycić zabawkę, zamykamy rękę lub oddalamy powoli od niego.',
     ytLink: '',
-    film: '',
+    video: proszeVideo,
   },
   {
     name: 'Spacer',
@@ -142,7 +156,7 @@ const tricks = [
     description:
       'Komenda "Czy", "chcesz", "iść", "na", "spacer" wykonana pojedynczymi słowami zachęca psa, żeby pójść na spacer. Przed samym wyjściem powtórzyć komendę "spacer". Przed założeniem obroży należy wydać komendę "siad" i dopiero wtedy założyć psu obrożę i z nim wyjść. Adekwatnie powrót.',
     ytLink: '',
-    film: '',
+    video: '',
   },
 ]
 
@@ -153,7 +167,7 @@ const newTricks = [
     description: '',
     descriptionLink: 'https://johndog.pl/blog/wychowanie/skok-przez-przeszkode/',
     ytLink: 'https://www.youtube.com/watch?v=81MH7pe8mV0',
-    film: '',
+    video: '',
   },
   {
     name: 'Przynieś',
@@ -161,7 +175,7 @@ const newTricks = [
     description: '',
     ytLink:
       'https://www.youtube.com/watch?v=6Gpg4pS1FFc&list=PLJKV2_OdaYLUNSyL9Ex-aWQzU1LkLJJkl&index=15',
-    film: '',
+    video: '',
   },
 ]
 
@@ -183,7 +197,8 @@ const list = [
     </ul>
     <h2 class="text-lg font-bold text-center">Hades zna</h2>
     <AccordionTrick v-for="trick in tricks" :key="trick.name" v-bind="trick" />
-    <h2 class="text-lg font-bold text-center">Hades chętnie pozna któreś z nich</h2>
+
+    <h2 class="text-lg font-bold text-center mt-4">Hades chętnie pozna któreś z nich</h2>
     <AccordionTrick v-for="trick in newTricks" :key="trick.name" v-bind="trick" />
   </div>
 </template>

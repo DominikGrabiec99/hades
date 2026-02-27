@@ -12,7 +12,7 @@ defineProps<{
   description?: string
   ytLink?: string
   descriptionLink?: string
-  film?: string
+  video?: string
 }>()
 </script>
 
@@ -20,7 +20,7 @@ defineProps<{
   <Accordion type="single" collapsible class="w-full">
     <AccordionItem value="item-1">
       <AccordionTrigger>
-        <span class="font-bold">{{ name }}</span>
+        <span class="font-bold cursor-pointer">{{ name }}</span>
       </AccordionTrigger>
       <AccordionContent>
         <div class="flex flex-col gap-1">
@@ -39,6 +39,10 @@ defineProps<{
           >
             Link do opisu sztuczki
           </a>
+
+          <video v-if="video" height="500" class="!h-125" controls>
+            <source :src="video" type="video/mp4" />
+          </video>
         </div>
       </AccordionContent>
     </AccordionItem>
